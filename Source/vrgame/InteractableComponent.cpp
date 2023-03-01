@@ -38,3 +38,11 @@ void UInteractableComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 	// ...
 }
 
+void UInteractableComponent::StartOutlining() {
+	
+}
+
+void UInteractableComponent::StopOutlining() {
+	
+}
+

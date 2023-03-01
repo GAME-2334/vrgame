@@ -5,7 +5,11 @@
     <projectFile>Intermediate/ProjectFiles/vrgame.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588f0d1b-ae0e-4841-a0c6-aab0daa8f640" name="Changes" comment="" />
+    <list default="true" id="588f0d1b-ae0e-4841-a0c6-aab0daa8f640" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vrgame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vrgame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VRTemplate/Blueprints/VRPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRTemplate/Blueprints/VRPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VRTemplate/Maps/Outlinetest.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VRTemplate/Maps/Outlinetest.umap" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,6 +264,7 @@
       <workItem from="1675728675925" duration="230000" />
       <workItem from="1675729067146" duration="447000" />
       <workItem from="1675730899936" duration="1694000" />
+      <workItem from="1677545936987" duration="891000" />
     </task>
     <servers />
   </component>
