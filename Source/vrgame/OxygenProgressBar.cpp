@@ -3,6 +3,22 @@
 
 #include "OxygenProgressBar.h"	
 
+void UOxygenProgressBar::StartFillingOxygen()
+{
+    int increase = 1;
+    GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.1f, true);
+    StopOxygenDecrease();
+    isFilling = true;
+}
+
+void UOxygenProgressBar::StopFillingOxygen()
+{
+    isFilling = false;
+    StartOxygenDecrease();
+    GetWorld()->GetTimerManager().ClearTimer(SlowOxygenFillingTimer);
+
+}
+
 void UOxygenProgressBar::Bind()
 {
     AppearOnScreen();
@@ -89,6 +105,11 @@ void UOxygenProgressBar::AddOxygen(int amount)
         StopOxygenDecrease();
     }
     SetPercent(currentPercent);
+}
+
+void UOxygenProgressBar::AddOxygenSlowlyByTimer()
+{
+    AddOxygen(1);
 }
 
 

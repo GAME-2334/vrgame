@@ -33,6 +33,13 @@ public:
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 		class UTextBlock* OxygenBarLabel;
 
+	bool isFilling;
+	UFUNCTION(BlueprintCallable)
+		void StartFillingOxygen();
+
+	UFUNCTION(BlueprintCallable)
+		void StopFillingOxygen();
+
 	UFUNCTION(BlueprintCallable)
 		void Bind();
 
@@ -41,6 +48,9 @@ public:
 	FTimerHandle OpacityTimerHandle;
 
 	FTimerHandle OxygenDecreaseTimer;
+
+	FTimerHandle SlowOxygenFillingTimer;
+
 
 	//if the oxygen is saturated, after x seconds start decreasing again.
 	FTimerHandle OxygenSaturationTimer;
@@ -64,6 +74,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		void AddOxygen(int amount);
+
+	UFUNCTION(BlueprintCallable)
+		void AddOxygenSlowlyByTimer();
 
 
 	UFUNCTION(BlueprintCallable)
