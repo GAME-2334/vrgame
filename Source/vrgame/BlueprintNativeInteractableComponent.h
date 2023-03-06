@@ -18,6 +18,6 @@ class VRGAME_API UBlueprintNativeInteractableComponent : public UInteractableCom
 	virtual void Interact() override;
 
 protected:
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interactions")
+	UFUNCTION(BlueprintImplementableEvent, Category = "Interactions")
 	void InteractOverride();
 };
