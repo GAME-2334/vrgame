@@ -20,6 +20,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Interactions")
 	virtual void Interact();
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interactions")
+	void StartOutlining();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interactions")
+	void StopOutlining();
+
 	UPROPERTY(EditAnywhere)
 		int editnumber;
 	UPROPERTY(EditAnywhere)
