@@ -3,6 +3,16 @@
 	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "vrgame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "XRVisualization",
@@ -11,15 +21,6 @@
 		{
 			"Name": "ResonanceAudio",
 			"Enabled": true
-		},
-		{
-			"Name": "OculusVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Android"
-			]
 		},
 		{
 			"Name": "OpenXR",
@@ -52,16 +53,10 @@
 		}
 	],
 	"TargetPlatforms": [
-		"Android",
-		"IOS",
-		"Linux",
-		"Mac",
-		"PS4",
-		"PS5",
-		"Windows",
+		"AllDesktop",
 		"WindowsNoEditor",
-		"Switch",
-		"XboxOne",
-		"XSX"
+		"MacNoEditor",
+		"LinuxAArch64NoEditor",
+		"LinuxNoEditor"
 	]
 }
