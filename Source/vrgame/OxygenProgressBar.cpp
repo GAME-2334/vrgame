@@ -6,7 +6,7 @@
 void UOxygenProgressBar::StartFillingOxygen()
 {
     int increase = 1;
-    GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.1f, true);
+    GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.02f, true);
     StopOxygenDecrease();
     isFilling = true;
 }
@@ -59,7 +59,7 @@ void UOxygenProgressBar::StartOxygenDecrease()
 {
     AppearOnScreen();
     IsOxygenDecreasing = true;
-    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 0.2f, true);
+    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 1.0f, true);
 
 }
 
