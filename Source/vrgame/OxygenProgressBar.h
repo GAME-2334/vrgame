@@ -24,6 +24,8 @@ class VRGAME_API UOxygenProgressBar : public UUserWidget
 	
 public:
 	int currentPercent = 100;
+	int oxygen_unit_counter;
+	int max_oxygen_to_add;
 
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 		class UProgressBar* OxygenBar;
@@ -35,7 +37,7 @@ public:
 
 	bool isFilling;
 	UFUNCTION(BlueprintCallable)
-		void StartFillingOxygen();
+		void StartFillingOxygen(int max_oxygen);
 
 	UFUNCTION(BlueprintCallable)
 		void StopFillingOxygen();
