@@ -6,10 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="560c05e4-f612-4f43-b994-ed77740df051" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.vrgame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vrgame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/OutlinedInteractableComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/OutlinedInteractableComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/World_Builder/Level_Map/Level_0.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/World_Builder/Level_Map/Level_0.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/World_Builder/World_BluePrints/BP_WB_Door_Open.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/World_Builder/World_BluePrints/BP_WB_Door_Open.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3DAI/ThirdPersonBP/Blueprints/AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3DAI/ThirdPersonBP/Blueprints/AI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Art/Animations/Anim_Spider_Launch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Art/Animations/Anim_Spider_Launch.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dev/devSpider.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dev/devSpider.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +266,7 @@
       <workItem from="1675730899936" duration="1694000" />
       <workItem from="1677545936987" duration="891000" />
       <workItem from="1678145295113" duration="1763000" />
+      <workItem from="1681346638658" duration="18000" />
     </task>
     <servers />
   </component>
