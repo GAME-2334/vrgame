@@ -90,7 +90,7 @@ public:
 	FSlateColor SlateRed = FSlateColor(FLinearColor::Red);
 	FSlateColor SlateWhite = FSlateColor(FLinearColor::White);
 
-	FLinearColor FullColor = FLinearColor(0.059896f, 1.0f, 0.797975f, 1.0f);
+	FLinearColor FullColor = FLinearColor(0.0f, 0.527115f, 0.991102f, 1.0f);
 	FLinearColor MidColor = FLinearColor(1.0f, 0.855065f, 0.19498f, 1.0f);
 	FLinearColor LowColor = FLinearColor(0.609375f, 0.053683f, 0.022217f, 1.0f);
 
