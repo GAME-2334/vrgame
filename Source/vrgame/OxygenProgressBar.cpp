@@ -53,14 +53,11 @@ void UOxygenProgressBar::FadeOut()
 
 }
 
-
-
 void UOxygenProgressBar::StartOxygenDecrease() 
 {
     AppearOnScreen();
     IsOxygenDecreasing = true;
-    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 1.0f, true);
-
+    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 2.0f, true);
 }
 
 void UOxygenProgressBar::DecreaseOxygen() 
@@ -110,9 +107,6 @@ void UOxygenProgressBar::AddOxygen(int amount)
 void UOxygenProgressBar::AddOxygenSlowlyByTimer()
 {
     AddOxygen(1);
-
-
- 
 }
 
 
