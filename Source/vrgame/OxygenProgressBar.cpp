@@ -3,10 +3,11 @@
 
 #include "OxygenProgressBar.h"	
 
-void UOxygenProgressBar::StartFillingOxygen()
+void UOxygenProgressBar::StartFillingOxygen(int max_oxygen = 10)
 {
-    int increase = 1;
-    GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.1f, true);
+    oxygen_unit_counter = 0;
+    max_oxygen_to_add = max_oxygen;
+    GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.02f, true);
     StopOxygenDecrease();
     isFilling = true;
 }
@@ -59,7 +60,7 @@ void UOxygenProgressBar::StartOxygenDecrease()
 {
     AppearOnScreen();
     IsOxygenDecreasing = true;
-    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 0.2f, true);
+    GetWorld()->GetTimerManager().SetTimer(OpacityTimerHandle, this, &UOxygenProgressBar::DecreaseOxygen, 1.0f, true);
 
 }
 
@@ -109,7 +110,18 @@ void UOxygenProgressBar::AddOxygen(int amount)
 
 void UOxygenProgressBar::AddOxygenSlowlyByTimer()
 {
-    AddOxygen(1);
+    oxygen_unit_counter++;
+    max_oxygen_to_add ;
+    if (oxygen_unit_counter >= max_oxygen_to_add) 
+    {
+        StopFillingOxygen();
+    }
+    else {
+        AddOxygen(1);
+    }
+
+
+ 
 }
 
 
