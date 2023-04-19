@@ -37,7 +37,7 @@ public:
 
 	bool isFilling;
 	UFUNCTION(BlueprintCallable)
-		void StartFillingOxygen(int max_oxygen);
+		void StartFillingOxygen();
 
 	UFUNCTION(BlueprintCallable)
 		void StopFillingOxygen();
