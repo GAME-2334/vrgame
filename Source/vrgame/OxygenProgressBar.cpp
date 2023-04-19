@@ -5,7 +5,7 @@
 
 void UOxygenProgressBar::StartFillingOxygen()
 {
-    int increase = 1;
+   
     GetWorld()->GetTimerManager().SetTimer(SlowOxygenFillingTimer, this, &UOxygenProgressBar::AddOxygenSlowlyByTimer, 0.02f, true);
     StopOxygenDecrease();
     isFilling = true;
@@ -110,6 +110,9 @@ void UOxygenProgressBar::AddOxygen(int amount)
 void UOxygenProgressBar::AddOxygenSlowlyByTimer()
 {
     AddOxygen(1);
+
+
+ 
 }
 
 
